@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-body {
+/* body {
   background: linear-gradient(#f7efef, #e6dcdc);
   min-height: 100vh;
   margin: 0;
@@ -13,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -35,7 +35,7 @@ h5 {
 .categories button {
   border-radius: 0;
   background: #c3c3c3;
-  color: #1a1a1a;
+  color: azure;
   font-weight: bold;
   border: none;
   border-top: black solid 0.1rem;
@@ -101,7 +101,7 @@ h5 {
 
 .tasks .task .label {
   background: lightcyan;
-  color: blue;
+  color: rgb(102, 102, 128);
   padding: 0.25rem;
   font-size: 0.75rem;
   border: solid #cbcbff 0.15rem;
@@ -192,4 +192,84 @@ button.toggle:focus {
     opacity: 0;
     transform: scale(20);
   }
+}
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  margin: 0;
+  color: azure;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background: #546994;
+ 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #228cd3;
+  color: white;
+}
+
+button.selected {
+  background-color: #2ecc71;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input, select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+}
+
+.task button {
+  background-color: #e74c3c;
+  margin: 0;
+}
+
+.task button:hover {
+  background-color: #c0392b;
 }

@@ -1,9 +1,13 @@
-import React from "react";
+// src/components/TaskList.js
+import React from 'react';
+import Task from './Task';
 
-function TaskList() {
+function TaskList({ tasks, onDeleteTask }) {
   return (
-    <div className="tasks">
-      {/* display a list of tasks using Task component */}
+    <div>
+      {tasks.filter(task => task !== undefined).map((task, index) => (
+        <Task key={task.id || index} task={task} onDeleteTask={onDeleteTask} />
+      ))}
     </div>
   );
 }
